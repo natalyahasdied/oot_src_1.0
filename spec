@@ -5,10 +5,10 @@ beginseg
 endseg
 beginseg
      name "boot"
-     include "build/asm/boot/boot_main.o"
-     include "build/asm/boot/idle.o"
+     include "build/src/boot/boot_main.o"
+     include "build/src/boot/idle.o"
      include "build/asm/boot/z_std_dma.o"
-     include "build/asm/boot/yaz0.o"
+     include "build/src/boot/yaz0.o"
      include "build/asm/boot/z_locale.o"
      include "build/asm/boot/boot_800015A0.o"
      include "build/asm/libultra_boot/osDriveRomInit.o"
@@ -264,6 +264,8 @@ beginseg
      include "build/asm/code/z_player_call.o"
      include "build/asm/code/z_fbdemo.o"
      include "build/asm/code/z_kaleido_manager.o"
+     include "build/asm/code/z_kaleido_scope_call.o"
+     include "build/asm/code/z_play.o"
      include "build/asm/code/code.o"
      address 0x800110A0
 endseg
