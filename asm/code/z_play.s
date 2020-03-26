@@ -863,7 +863,7 @@ glabel func_8009A750
 /* 89D1C 8009ADBC 02002025 */  or      $a0, $s0, $zero            ## $a0 = 00000074
 /* 89D20 8009ADC0 AFA2007C */  sw      $v0, 0x007C($sp)
 /* 89D24 8009ADC4 02002025 */  or      $a0, $s0, $zero            ## $a0 = 00000074
-/* 89D28 8009ADC8 0C02806E */  jal     func_800A01B8
+/* 89D28 8009ADC8 0C02806E */  jal     Game_Alloc
 /* 89D2C 8009ADCC 00402825 */  or      $a1, $v0, $zero            ## $a1 = 00000000
 /* 89D30 8009ADD0 8FAE007C */  lw      $t6, 0x007C($sp)
 /* 89D34 8009ADD4 24460008 */  addiu   $a2, $v0, 0x0008           ## $a2 = 00000008
@@ -3001,7 +3001,7 @@ glabel func_8009CCE8
 /* 8BC64 8009CD04 AFA70024 */  sw      $a3, 0x0024($sp)
 /* 8BC68 8009CD08 01CF2823 */  subu    $a1, $t6, $t7
 /* 8BC6C 8009CD0C AFA5001C */  sw      $a1, 0x001C($sp)
-/* 8BC70 8009CD10 0C02806E */  jal     func_800A01B8
+/* 8BC70 8009CD10 0C02806E */  jal     Game_Alloc
 /* 8BC74 8009CD14 24840074 */  addiu   $a0, $a0, 0x0074           ## $a0 = 00000074
 /* 8BC78 8009CD18 8FA70024 */  lw      $a3, 0x0024($sp)
 /* 8BC7C 8009CD1C AFA20018 */  sw      $v0, 0x0018($sp)
@@ -3027,7 +3027,7 @@ glabel func_8009CD44
 /* 8BCC0 8009CD60 AFA70024 */  sw      $a3, 0x0024($sp)
 /* 8BCC4 8009CD64 01CF2823 */  subu    $a1, $t6, $t7
 /* 8BCC8 8009CD68 AFA5001C */  sw      $a1, 0x001C($sp)
-/* 8BCCC 8009CD6C 0C02806E */  jal     func_800A01B8
+/* 8BCCC 8009CD6C 0C02806E */  jal     Game_Alloc
 /* 8BCD0 8009CD70 24840074 */  addiu   $a0, $a0, 0x0074           ## $a0 = 00000074
 /* 8BCD4 8009CD74 8FA70024 */  lw      $a3, 0x0024($sp)
 /* 8BCD8 8009CD78 AFA20018 */  sw      $v0, 0x0018($sp)

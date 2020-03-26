@@ -15,6 +15,11 @@ func_801C7E78 = 0x801C7E78;
 func_801C6EA0 = 0x801C6EA0;
 func_801C6E80 = 0x801C6E80;
 
+// globals
+gSaveContext        =        0x8011A5D0;
+gSegments           =        0x80120C38;
+gGameInfo           =        0x8011BA00;
+
 // boot_main.c
 osMemSize = 0x80000318;
 gCartHandle = 0x80006260;
@@ -27,9 +32,41 @@ sIdleThread = 0x80006850;
 D_80006550 = 0x80006550;
 D_80006558 = 0x80006558;
 
+// z_locale.c
+gCurrentRegion      =        0x80006280;
+D_800065F0          =        0x800065F0;
+
 // yaz0.c
-sYaz0MaxPtr = 0x8000889C;
-sYaz0CurDataEnd = 0x80008890;
-sYaz0CurSize = 0x80008898;
-sYaz0CurRomStart = 0x80008894;
-sYaz0DataBuffer = 0x80008490;
+sYaz0MaxPtr         =        0x8000889C;
+sYaz0CurDataEnd     =        0x80008890;
+sYaz0CurSize        =        0x80008898;
+sYaz0CurRomStart    =        0x80008894;
+sYaz0DataBuffer     =        0x80008490;
+
+// osEPiStartDma.c 
+__osPiDevMgr        =        0x80006370;
+
+// z_actor.c
+D_0404E740          =        0x0404E740;
+D_800E8210          =        0x800E8210;
+D_0404F000          =        0x0404F000;
+D_80106478          =        0x80106478;
+D_0404D6B0          =        0x0404D6B0;
+sNaviColorList      =        0x800E8214;
+D_8011B9D9          =        0x8011B9D9;
+D_801064A4          =        0x801064A4;
+D_801064A8          =        0x801064A8;
+D_80118BFC          =        0x80118BFC;
+D_80118BF4          =        0x80118BF4;
+D_801064AC          =        0x801064AC;
+D_80118C20          =        0x80118C20;
+D_800E8288          =        0x800E8288;
+
+// z_common_data.c
+D_8011B9F8          =        0x8011B9F8;
+D_8011B9FC          =        0x8011B9FC;
+
+// z_kaleido_manager.c
+sKaleidoAreaPtr     =        0x800FE4B8;
+gKaleidoMgrCurOvl   =        0x800FE4BC;
+gKaleidoMgrOverlayTable =    0x800FE480;

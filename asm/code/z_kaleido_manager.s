@@ -78,7 +78,7 @@ glabel KaleidoManager_Init
 .L80099D4C:
 /* 88CAC 80099D4C 5444FFF8 */  bnel    $v0, $a0, .L80099D30
 /* 88CB0 80099D50 8C4E0010 */  lw      $t6, 0x0010($v0)           ## 800FE4AC
-/* 88CB4 80099D54 0C02806E */  jal     func_800A01B8
+/* 88CB4 80099D54 0C02806E */  jal     Game_Alloc
 /* 88CB8 80099D58 24C40074 */  addiu   $a0, $a2, 0x0074           ## $a0 = 00000074
 /* 88CBC 80099D5C 3C018010 */  lui     $at, 0x8010                ## $at = 80100000
 /* 88CC0 80099D60 AC22E4B8 */  sw      $v0, -0x1B48($at)          ## 800FE4B8

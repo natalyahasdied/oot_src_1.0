@@ -51,7 +51,7 @@ glabel LogUtils_CheckFloatRange
 /* 016D0 80001B30 03E00008 */  jr      $ra
 /* 016D4 80001B34 00000000 */  nop
 
-glabel LogUtils_HungUpThread
+glabel LogUtils_HungupThread
 /* 016D8 80001B38 27BDFFE8 */  addiu   $sp, $sp, 0xFFE8           ## $sp = FFFFFFE8
 /* 016DC 80001B3C AFBF0014 */  sw      $ra, 0x0014($sp)
 /* 016E0 80001B40 AFA40018 */  sw      $a0, 0x0018($sp)
